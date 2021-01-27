@@ -80,9 +80,9 @@ app.use((err, req, res, next) => {
         data: data
     });
 });
-
+const PORT = 3001;
 app.listen(process.env.PORT || PORT, () => {
-    console.log(`Server started`);
+    console.log(`Server started${PORT}`);
 });
 
 
