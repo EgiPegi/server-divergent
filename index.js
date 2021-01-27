@@ -81,8 +81,8 @@ app.use((err, req, res, next) => {
     });
 });
 
-app.listen(3001, () => {
-    console.log(`Server started on 3001`);
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server started`);
 });
 
 
